@@ -24,7 +24,7 @@ body {
 .container {
     width: 60%;
     margin: 0 auto;
-    /* height: 100vh; */
+    min-height: 100vh;
 }
 
 .cards {
@@ -35,8 +35,8 @@ body {
 }
 
 .card-one, .card-two, .card-three {
-    padding: 26px 30px 48px 30px;
-    height: 72vh;
+    padding: 26px 30px 48px 28px;
+    height: 86%;
 }
 
 .card-one {
@@ -124,3 +124,59 @@ a {
 #link a:hover {
     color: var(--brightOrange);
 }
+
+@media screen and (max-width: 1180px) {
+    .container {
+        width: 80%;
+    }
+    .card-one, .card-two, .card-three {
+        height: 90%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        width: 100%;
+    }
+
+    .card-one, .card-two, .card-three {
+        height: 90%;
+    }
+}
+    
+@media screen and (max-width: 712px) {
+    .container {
+        width: 100%;
+    }
+
+    .card-one, .card-two, .card-three {
+        padding: 26px 10px 48px 10px;
+        height: 96%;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .container {
+        width: 70%;
+    }
+
+    .cards {
+        margin: 20px 0;
+        flex-direction: column;
+        height: auto;
+    }
+
+    .card-one {
+        border-radius: 12px 12px 0 0;
+    }
+
+    .card-three {
+        border-radius: 0 0 12px 12px;
+    }
+
+    .card-one, .card-two, .card-three {
+        padding: 26px 10px 48px 10px;
+        height: auto;
+    }
+}
+    

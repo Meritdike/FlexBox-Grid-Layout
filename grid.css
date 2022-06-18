@@ -74,3 +74,32 @@ body {
 #link a:hover {
     color: rgba(244, 247, 243, 0.6);
 }
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 72%;
+    }
+
+    #grid-main {
+        grid-template-areas: 'a a a a a a a a a a a a' 'b b b b b b b b b b b b' 'c c c c c d d d d d d d' 'c c c c c e e e e e e e';
+    }
+
+    .box-1, .box-2 {
+        padding: 56px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .container {
+        width: 82%;
+    }
+
+    #grid-main {
+        margin-top: 20px;
+        grid-template-areas: 'a a a' 'b b b' 'c c c' 'd d d' 'e e e';
+    }
+
+    .box-1, .box-2 {
+        padding: 56px;
+    }
+}

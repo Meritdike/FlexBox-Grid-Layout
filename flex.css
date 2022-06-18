@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --darkCyan: hsl(184, 100%, 22%);
+    --brightOrange: hsl(31, 77%, 52%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    --transparentWhite: hsla(0, 0%, 100%, 0.75);
+    --veryLightGray: hsl(0, 0%, 95%);
+    --fontSize: 15px;
+    --fontFamilyLexend: 'Lexend Deca', sans-serif;
+    --fontFamilyBigShoulders: 'Big Shoulders Display', cursive;
+}
+
+body {
+    background-color: var(--veryLightGray);
+}
+
+.container {
+    width: 60%;
+    margin: 0 auto;
+    /* height: 100vh; */
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.card-one, .card-two, .card-three {
+    padding: 26px 30px 48px 30px;
+    height: 72vh;
+}
+
+.card-one {
+    background-color: var(--brightOrange);
+    border-radius: 12px 0 0 12px;
+}
+
+.card-two {
+    background-color: var(--darkCyan);
+}
+
+.card-three {
+    background-color: var(--veryDarkCyan);
+    border-radius: 0 12px 12px 0;
+}
+
+img {
+    padding: 10px 18px 28px 18px;
+}
+
+h2 {
+    padding: 0 18px 28px 18px;
+    font-size: 32px;
+    font-family: var(--fontFamilyBigShoulders);
+    color: var(--veryLightGray);
+}
+
+p {
+    padding: 0 18px 86px 18px;
+    font-size: var(--fontSize);
+    font-family: var(--fontFamilyLexend);
+    color: var(--transparentWhite);
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    background-color: var(--veryLightGray);
+    padding: 10px 24px;
+    border-radius: 40px;
+    font-size: var(--fontSize);
+    font-family: var(--fontFamilyLexend);
+    margin: 0 18px 80px 18px;
+}
+
+.card-one a {
+    color: var(--brightOrange);
+}
+
+.card-two a {
+    color: var(--darkCyan);
+}
+
+.card-three a {
+    color: var(--veryDarkCyan);
+}
+
+.card-one a:hover {
+    background-color: var(--brightOrange);
+    color: var(--veryLightGray);
+    border: 2px solid var(--veryLightGray);
+}
+
+.card-two a:hover {
+    background-color: var(--darkCyan);
+    color: var(--veryLightGray);
+    border: 2px solid var(--veryLightGray);
+}
+
+.card-three a:hover {
+    background-color: var(--veryDarkCyan);
+    color: var(--veryLightGray);
+    border: 2px solid var(--veryLightGray);
+}
+
+#link {
+    text-align: end;
+    padding-top: 30px;
+}
+
+#link a {
+    color: var(--darkCyan);
+}
+
+#link a:hover {
+    color: var(--brightOrange);
+}

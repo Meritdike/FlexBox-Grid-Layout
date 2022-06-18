@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(5, 16, 36);
+}
+
+.container {
+    width: 56%;
+    margin: 0 auto;
+    min-height: 100vh;
+}
+
+#grid-layout {
+    display: flex;
+    place-items: center;
+    height: 90vh;
+}
+
+#grid-main {
+    display: grid;
+    grid-template-areas: 'a a a a a a a a b b b b' 'c c c c c d d d d d d d' 'c c c c c e e e e e e e';
+    gap: 15px;
+    width: 100%;
+    margin: auto;
+}
+
+.box-1 {
+    background-color: rgb(219, 47, 47);
+    grid-area: a;
+    padding: 112px 56px;
+}
+
+.box-2 {
+    background-color: rgb(223, 143, 23);
+    grid-area: b;
+    padding: 112px 56px;
+}
+
+.box-3 {
+    background-color: rgb(23, 156, 34);
+    grid-area: c;
+    padding: 56px;
+}
+
+.box-4 {
+    background-color: rgb(47, 165, 219);
+    grid-area: d;
+    padding: 56px;
+}
+
+.box-5 {
+    background-color: rgb(102, 16, 160);
+    grid-area: e;
+    padding: 56px;
+}
+
+#link {
+    text-align: end;
+    padding-top: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+#link a {
+    text-decoration: none;
+    color: #f4f7f3;
+}
+
+#link a:hover {
+    color: rgba(244, 247, 243, 0.6);
+}
